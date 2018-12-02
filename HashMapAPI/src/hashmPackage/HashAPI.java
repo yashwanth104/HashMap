@@ -1,5 +1,4 @@
-
-package apiformap;
+package hashmPackage;
 import java.util.ArrayList;
 /**
  *
@@ -19,19 +18,8 @@ class HashNode<K, V>
         this.value = value; 
     } 
 } 
-public class APIforMap {
 
-    public static void main(String[] args) {
-        
-        Map<String, Double>map = new Map<>(); 
-        map.put("yash",2.0 ); 
-        System.out.println(map.get("yash"));
-    }
-    
-}
-	  
-// hash table class 
-class Map<K, V> 
+public class HashAPI<K, V> 
 { 
     // array of chains for hash table, size to keep track of size and 
     //numbuckets to fix the size of hashmap bucket
@@ -40,7 +28,7 @@ class Map<K, V>
     private int size;
   
     // To initiate arraylist for hashmap with empty values(null)
-    public Map() 
+    public HashAPI() 
     { 
         bucketArray = new ArrayList<>(); 
         numBuckets = 888; 
@@ -125,3 +113,4 @@ class Map<K, V>
     } 
   
 }
+
